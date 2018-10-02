@@ -1,0 +1,59 @@
+package Ut;
+
+
+public class Loading extends Delay
+{
+  public void load()
+   {
+       System.out.print("Loading pls wait:");
+       delay3();    //For delaying
+       clear();     //Clearscreen
+       System.out.print("Load Complete");
+   }
+}
+
+package Ut; 
+public class Delay
+{
+  public  void delay1()
+   {
+       for(int i=0;i<=1000;i++)
+       {
+           for(int j=0;i<=1000;i++)
+           {
+               for(int k=0;i<=1000;i++)
+               ;
+           }
+       }
+   }
+   public void delay2()
+   {
+       for(int i=0;i<=1000000;i++)
+       {
+       delay1();
+       }
+       System.out.print(".");//change made here 
+   
+  }
+   public void delay3()
+  {
+    int n=5;
+      for(int i=1;i<=n;i++)
+      {
+      delay2();
+    /*  if(i%2==0)
+     {
+      System.out.print(""+i+"%")
+      delay2();
+     }
+     */
+    }
+     // System.out.println("\n");
+  }
+   
+  public void clear()
+  {
+     
+      System.out.print("\u000c");//change made here
+  }
+}
